@@ -1,14 +1,17 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-export default defineNuxtConfig({
-  devtools: { enabled: true },
-  css: ["@/assets/scss/global.scss"],
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: '@use "~/assets/scss/_variables.scss" as *;',
-        },
+import type { ViteConfig } from "nuxt/schema";
+
+const viteConfig = {
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@use "~/assets/scss/_variables.scss" as *;',
       },
     },
   },
+} satisfies ViteConfig;
+
+export default defineNuxtConfig({
+  devtools: { enabled: true },
+  css: ["@/assets/scss/global.scss"],
+  vite: viteConfig,
 });
