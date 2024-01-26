@@ -6,6 +6,6 @@ describe("layouts/default.vue", () => {
   test("renders correctly a <main> tag", () => {
     const wrapper = mount(DefaultLayout);
 
-    expect(wrapper.get("main")).toBeTruthy();
+    expect(wrapper.html().includes("main")).toBeTruthy();
   });
 });

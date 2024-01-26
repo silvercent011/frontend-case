@@ -1,5 +1,6 @@
 <template>
   <main>
+    <SideBar />
     <slot />
   </main>
 </template>
