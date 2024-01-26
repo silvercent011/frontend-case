@@ -18,7 +18,7 @@ const companyData = _companyService.getCompany();
       />
     </div>
     <div class="flex align-center">
-      <img src="/images/SideBar/arrow-down-s-line.svg" alt="logo" />
+      <Icon name="ri:arrow-down-s-line" class="icon" />
     </div>
   </div>
 </template>
@@ -27,5 +27,10 @@ const companyData = _companyService.getCompany();
 .card:hover {
   background-color: $weak-100;
   cursor: pointer;
+}
+.icon {
+  color: $soft-400;
+  height: 24px;
+  width: 24px;
 }
 </style>

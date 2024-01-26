@@ -25,26 +25,29 @@ const isActive = computed(() => {
   >
     <div v-if="isActive" class="tip"></div>
 
-    <object
+    <!-- <object
       type="image/svg+xml"
       :class="{ activeIcon: isActive }"
       :data="iconSrc"
-    ></object>
+    ></object> -->
+
+    <Icon :class="{ activeIcon: isActive }" class="icon" :name="iconSrc" />
 
     <span class="label" :class="{ inactiveLabel: !isActive }">
       {{ label }}
     </span>
-    <object
-      type="image/svg+xml"
-      v-if="isActive"
-      data="/images/SideBar/arrow-right-s-line.svg"
-    ></object>
+    <Icon v-if="isActive" name="ri:arrow-right-s-line" class="icon" />
   </NuxtLink>
 </template>
 
 <style lang="scss" scoped>
 span {
   flex: 1;
+}
+
+.icon {
+  color: $sub-500;
+  height: 20px;
 }
 
 .activeLink {
@@ -55,8 +58,7 @@ span {
   color: $sub-500;
 }
 .activeIcon {
-  filter: invert(36%) sepia(28%) saturate(6781%) hue-rotate(1deg)
-    brightness(101%) contrast(106%);
+  color: $primary-base;
 }
 
 .tip {

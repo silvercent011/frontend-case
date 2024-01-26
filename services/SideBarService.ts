@@ -4,42 +4,42 @@ export class SideBarService {
       {
         url: "/",
         label: "Dashboard",
-        iconSrc: `/images/SideBar/layout-grid-line.svg`,
+        iconSrc: `ri:layout-grid-line`,
       },
       {
         url: "/calendario",
         label: "Calendário",
-        iconSrc: `/images/SideBar/calendar-line.svg`,
+        iconSrc: `ri:calendar-line`,
       },
       {
         url: "/descanso",
         label: "Descanso",
-        iconSrc: `/images/SideBar/timer-line.svg`,
+        iconSrc: `ri:timer-line`,
       },
       {
         url: "/projetos",
         label: "Projetos",
-        iconSrc: `/images/SideBar/folders-line.svg`,
+        iconSrc: `ri:folders-line`,
       },
       {
         url: "/times",
         label: "Times",
-        iconSrc: `/images/SideBar/group-line.svg`,
+        iconSrc: `ri:group-line`,
       },
       {
         url: "/integracoes",
         label: "Integrações",
-        iconSrc: `/images/SideBar/equalizer-line.svg`,
+        iconSrc: `ri:equalizer-line`,
       },
       {
         url: "/beneficios",
         label: "Benefícios",
-        iconSrc: `/images/SideBar/star-smile-line.svg`,
+        iconSrc: `ri:star-smile-line`,
       },
       {
         url: "/documentos",
         label: "Documentos",
-        iconSrc: `/images/SideBar/file-cloud-line.svg`,
+        iconSrc: `ri:file-cloud-line`,
       },
     ];
   }
@@ -49,12 +49,12 @@ export class SideBarService {
       {
         url: "/configuracoes",
         label: "Configurações",
-        iconSrc: `/images/SideBar/settings-2-line.svg`,
+        iconSrc: `ri:settings-2-line`,
       },
       {
         url: "/suporte",
         label: "Suporte",
-        iconSrc: `/images/SideBar/headphone-line.svg`,
+        iconSrc: `ri:headphone-line`,
       },
     ];
   }

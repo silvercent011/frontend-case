@@ -15,7 +15,7 @@ const { name, email, verified, avatar } = _userService.getLoggedUser();
       <SideBarUserInfo :name="name" :email="email" :verified="verified" />
     </div>
     <div class="flex align-center">
-      <img src="/images/SideBar/arrow-right-s-line.svg" alt="logo" />
+      <Icon name="ri:arrow-right-s-line" class="icon" />
     </div>
   </div>
 </template>
@@ -24,5 +24,11 @@ const { name, email, verified, avatar } = _userService.getLoggedUser();
 .card:hover {
   background-color: $weak-100;
   cursor: pointer;
+}
+
+.icon {
+  color: $soft-400;
+  height: 24px;
+  width: 24px;
 }
 </style>
