@@ -20,6 +20,9 @@ const supportContent = _sidebarService.getSupportContent();
         <SideBarLinksColumn :links="supportContent" hideTitle />
       </div>
     </template>
+    <template #footer>
+      <SideBarFooterCard />
+    </template>
   </SideBarBase>
 </template>
 
