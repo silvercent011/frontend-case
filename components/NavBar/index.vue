@@ -2,7 +2,7 @@
   <nav class="padding-x-32 padding-y-20 flex gap-12 space-between">
     <NavBarUserInfo class="userInfo" />
     <NavBarItemButton>
-      <img src="/images/NavBar/search-2-line.svg" alt="Notifications" />
+      <Icon name="ri:search-2-line" class="icon-sm" />
     </NavBarItemButton>
     <NavBarItemButton>
       <NavBarNotification />

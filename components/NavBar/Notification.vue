@@ -1,7 +1,7 @@
 <template>
   <div class="container flex align-center">
     <div class="dot"></div>
-    <img src="/images/NavBar/notification-3-line.svg" alt="Notifications" />
+    <Icon name="ri:notification-3-line" class="icon-sm" />
   </div>
 </template>
 
