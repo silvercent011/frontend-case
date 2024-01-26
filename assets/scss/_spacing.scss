@@ -1,4 +1,4 @@
-$spacing-values: 2, 4, 6, 8, 12, 16, 20, 24, 28, 32;
+$spacing-values: 2, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32;
 
 @mixin padding($value) {
   padding: #{$value}px;
