@@ -1,11 +1,22 @@
-$primary-base: #FF4A00;
-$soft-200: #E2E4E9;
-$soft-400: #868C98;
-$weak-100: #F6F8FA;
+// Brand Colors
+
+$primary-base: #ff4a00;
+
+// Neutral Colors
+
+$soft-200: #e2e4e9;
+$soft-400: #868c98;
+$weak-100: #f6f8fa;
 $sub-500: #525866;
-$main-900: #0A0D14;
-$white-0: #FFFFFF;
-$purple-base: #6E3FF3;
-$red-base: #DF1C41;
-$pink-base: #E255F2;
-$verified: #35B9E9;
+$main-900: #0a0d14;
+$white-0: #ffffff;
+
+// Resource Colors
+$purple-base: #6e3ff3;
+$red-base: #df1c41;
+$pink-base: #e255f2;
+$verified: #35b9e9;
+
+@mixin background($value) {
+  background-color: $value;
+}

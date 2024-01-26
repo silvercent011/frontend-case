@@ -1,1 +1,27 @@
-@import 'colors'
+@import "colors";
+@import "spacing";
+@import "text";
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.rounded-small {
+  border-radius: 8px;
+}
+
+.rounded-medium {
+  border-radius: 16px;
+}

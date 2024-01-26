@@ -1,0 +1,24 @@
+.label {
+  font-size: 14px;
+  font-weight: 400;
+  color: $main-900;
+}
+
+.label-small {
+  font-size: 14px;
+  font-weight: 400;
+  color: $sub-500;
+}
+
+.paragraph {
+  font-size: 12px;
+  font-weight: 300;
+  color: $sub-500;
+}
+.subheading {
+  color: $soft-400;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.48px;
+}

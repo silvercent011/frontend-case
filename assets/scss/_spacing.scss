@@ -1,0 +1,55 @@
+$spacing-values: 4, 6, 8, 12, 16, 20, 24, 28, 32;
+
+@mixin padding($value) {
+  padding: #{$value}px;
+}
+
+@mixin padding-x($value) {
+  padding-left: #{$value}px;
+  padding-right: #{$value}px;
+}
+
+@mixin padding-y($value) {
+  padding-top: #{$value}px;
+  padding-bottom: #{$value}px;
+}
+
+@mixin padding-t($value) {
+  padding-top: #{$value}px;
+}
+
+@mixin padding-b($value) {
+  padding-bottom: #{$value}px;
+}
+
+@mixin margin($value) {
+  margin: #{$value}px;
+}
+
+@mixin gap($value) {
+  gap: #{$value}px;
+}
+
+@each $spacing in $spacing-values {
+  .padding-#{$spacing} {
+    @include padding($spacing);
+  }
+  .padding-x-#{$spacing} {
+    @include padding-x($spacing);
+  }
+  .padding-y-#{$spacing} {
+    @include padding-y($spacing);
+  }
+  .padding-t-#{$spacing} {
+    @include padding-t($spacing);
+  }
+  .padding-b-#{$spacing} {
+    @include padding-b($spacing);
+  }
+  .margin-#{$spacing} {
+    @include margin($spacing);
+  }
+  .gap-#{$spacing} {
+    @include gap($spacing);
+  }
+}
