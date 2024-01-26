@@ -5,6 +5,7 @@ export class UserService {
       email: "sophia@jurisoft.com",
       avatar: "/images/Avatar/User.png",
       verified: true,
+      gender: "F",
     };
   }
 }
