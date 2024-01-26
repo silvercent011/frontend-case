@@ -7,8 +7,9 @@
     <NavBarItemButton>
       <NavBarNotification />
     </NavBarItemButton>
-
-    <slot />
+    <div class="flex gap-12 align-center justify-center">
+      <slot />
+    </div>
   </nav>
 </template>
 
