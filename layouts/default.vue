@@ -1,7 +1,9 @@
 <template>
   <main>
     <SideBar />
-    <slot />
+    <div class="flex flex-column content">
+      <slot />
+    </div>
   </main>
 </template>
 
@@ -10,5 +12,9 @@ main {
   min-height: 100svh;
   height: 100svh;
   display: flex;
+}
+
+.content {
+  flex: 1;
 }
 </style>

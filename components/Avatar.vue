@@ -2,19 +2,25 @@
 interface AvatarProps {
   name: string;
   src: string;
+  size?: number;
 }
 
-defineProps<AvatarProps>();
+withDefaults(defineProps<AvatarProps>(), {
+  size: 40,
+});
 </script>
 
 <template>
-  <img class="avatar" :src="src" :alt="`${name} avatar`" />
+  <img
+    :style="{ width: `${size}px`, height: `${size}px` }"
+    class="avatar"
+    :src="src"
+    :alt="`${name} avatar`"
+  />
 </template>
 
 <style lang="scss" scoped>
 .avatar {
-  width: 40px;
-  height: 40px;
   border-radius: 50%;
 }
 </style>

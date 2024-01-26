@@ -3,7 +3,7 @@ import { describe, expect, test } from "vitest";
 import UserInfo from "./UserInfo.vue";
 
 describe("UserInfo", () => {
-  test("renders correctly company info ", () => {
+  test("renders correctly user info ", () => {
     const users = [
       {
         name: "Sophia Williams",
