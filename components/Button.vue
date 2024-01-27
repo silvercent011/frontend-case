@@ -2,6 +2,7 @@
 interface ButtonProps {
   variant: "primary" | "outlined";
   icon?: string;
+  small?: boolean;
 }
 
 withDefaults(defineProps<ButtonProps>(), {
@@ -10,7 +11,13 @@ withDefaults(defineProps<ButtonProps>(), {
 </script>
 
 <template>
-  <button :class="variant" class="padding-10 flex gap-4 align-center">
+  <button
+    :class="[
+      variant,
+      small ? 'padding-x-8 padding-y-6 gap-2' : 'padding-10 gap-4',
+    ]"
+    class="flex align-center"
+  >
     <Icon v-if="icon" :name="icon" class="btn-icon" />
     <span class="padding-x-4">
       <slot />
