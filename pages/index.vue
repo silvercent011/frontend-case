@@ -5,7 +5,11 @@
   </NavBar>
 
   <div class="grid padding-x-32 padding-y-4">
-    <Card title="Rastreador de Tempo" icon="ri:timer-flash-line">
+    <Card
+      class="v-span-2"
+      title="Rastreador de Tempo"
+      icon="ri:timer-flash-line"
+    >
       <template #header>
         <Button small icon="ri:history-line">Histórico</Button>
       </template>
@@ -17,7 +21,11 @@
       </template>
     </Card>
 
-    <Card title="Destaque colaboradores" icon="ri:star-smile-line">
+    <Card
+      class="v-span-2"
+      title="Destaque colaboradores"
+      icon="ri:star-smile-line"
+    >
       <template #header>
         <Button small icon="ri:share-forward-line">Enviar</Button>
       </template>
@@ -28,7 +36,7 @@
         <Button small>Ver todos</Button>
       </template>
     </Card>
-    <Card title="Cursos" icon="ri:book-3-line">
+    <Card class="h-span-2" title="Cursos" icon="ri:book-3-line">
       <template #header>
         <input type="text" placeholder="Hello" />
         <Button small>Ver todos</Button>

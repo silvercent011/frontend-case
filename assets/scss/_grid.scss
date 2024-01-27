@@ -1,0 +1,18 @@
+$span-values: 2, 4, 6, 8, 10;
+
+@mixin v-span($value) {
+  grid-row: span $value;
+}
+
+@mixin h-span($value) {
+  grid-column: span $value;
+}
+
+@each $span in $span-values {
+  .v-span-#{$span} {
+    @include v-span($span);
+  }
+  .h-span-#{$span} {
+    @include h-span($span);
+  }
+}
