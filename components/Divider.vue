@@ -1,6 +1,7 @@
 <script setup lang="ts">
 interface DividerProps {
   orientation?: "horizontal" | "vertical";
+  noPadding?: boolean;
 }
 
 withDefaults(defineProps<DividerProps>(), {
@@ -9,7 +10,11 @@ withDefaults(defineProps<DividerProps>(), {
 </script>
 
 <template>
-  <div :class="[orientation === 'horizontal' ? 'padding-x-20' : '']">
+  <div
+    :class="[
+      orientation === 'horizontal' ? (noPadding ? '' : 'padding-x-20') : '',
+    ]"
+  >
     <div
       :class="[orientation === 'horizontal' ? 'divider' : 'v-divider']"
     ></div>
