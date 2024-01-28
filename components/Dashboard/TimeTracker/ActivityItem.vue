@@ -24,8 +24,9 @@ defineProps<ActivityItemProps>();
   border-radius: 50%;
   border: 1px solid $soft-200;
   background: $white-0;
-  height: 40px;
-  width: 40px;
+  height: 24px;
+
+  width: 24px;
 }
 
 .content {

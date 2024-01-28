@@ -27,7 +27,6 @@ const handleTouchStart = () => {
 <template>
   <Card
     @click="handleTouchStart"
-    class="v-span-2"
     title="Rastreador de Tempo"
     icon="ri:timer-flash-line"
   >

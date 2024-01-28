@@ -5,7 +5,7 @@
   </NavBar>
 
   <div class="grid padding-x-32 padding-y-4">
-    <DashboardTimeTracker />
+    <DashboardTimeTracker class="v-span-2" />
 
     <DashboardDailyHours />
 
@@ -19,11 +19,7 @@
       </template>
     </Card>
 
-    <Card title="Cursos - Progresso" icon="ri:book-3-line">
-      <template #header>
-        <Button small>Ver todos</Button>
-      </template>
-    </Card>
+    <DashboardCoursesProgress />
     <Card class="h-span-2" title="Cursos" icon="ri:book-3-line">
       <template #header>
         <input type="text" placeholder="Hello" />
