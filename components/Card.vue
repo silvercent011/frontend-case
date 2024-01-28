@@ -8,7 +8,7 @@ defineProps<CardProps>();
 </script>
 
 <template>
-  <article class="rounded-medium padding-16 gap-16 flex flex-col">
+  <article class="rounded-medium padding-16 gap-16 flex flex-column">
     <div class="flex space-between align-center header-container">
       <div class="flex gap-8 align-center padding-y-4">
         <Icon class="card-icon" :name="icon" />

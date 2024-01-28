@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 interface ButtonProps {
-  variant: "primary" | "outlined";
+  variant?: "primary" | "outlined";
   icon?: string;
   small?: boolean;
 }

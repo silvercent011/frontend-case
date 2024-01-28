@@ -5,15 +5,7 @@
   </NavBar>
 
   <div class="grid padding-x-32 padding-y-4">
-    <Card
-      class="v-span-2"
-      title="Rastreador de Tempo"
-      icon="ri:timer-flash-line"
-    >
-      <template #header>
-        <Button small icon="ri:history-line">Histórico</Button>
-      </template>
-    </Card>
+    <DashboardTimeTracker />
 
     <Card title="Horas diárias de trabalho" icon="ri:timer-line">
       <template #header>
