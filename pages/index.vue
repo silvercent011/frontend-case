@@ -7,11 +7,7 @@
   <div class="grid padding-x-32 padding-y-4">
     <DashboardTimeTracker />
 
-    <Card title="Horas diárias de trabalho" icon="ri:timer-line">
-      <template #header>
-        <Button small>Detalhes</Button>
-      </template>
-    </Card>
+    <DashboardDailyHours />
 
     <Card
       class="v-span-2"
