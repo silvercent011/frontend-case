@@ -9,15 +9,7 @@
 
     <DashboardDailyHours />
 
-    <Card
-      class="v-span-2"
-      title="Destaque colaboradores"
-      icon="ri:star-smile-line"
-    >
-      <template #header>
-        <Button small icon="ri:share-forward-line">Enviar</Button>
-      </template>
-    </Card>
+    <DashboardHighlightEmployees class="v-span-2" />
 
     <DashboardCoursesProgress />
     <Card class="h-span-2" title="Cursos" icon="ri:book-3-line">
