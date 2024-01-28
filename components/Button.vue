@@ -16,7 +16,7 @@ withDefaults(defineProps<ButtonProps>(), {
       variant,
       small ? 'padding-x-8 padding-y-6 gap-2' : 'padding-10 gap-4',
     ]"
-    class="flex align-center"
+    class="flex align-center justify-center"
   >
     <Icon v-if="icon" :name="icon" class="btn-icon" />
     <span class="padding-x-4">
@@ -34,6 +34,7 @@ button {
   font-weight: 500;
   line-height: 20px;
   outline-offset: -1px;
+  text-align: center;
 }
 .outlined {
   outline: 1px solid $soft-200;
