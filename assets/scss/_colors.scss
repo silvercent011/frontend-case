@@ -10,11 +10,14 @@ $weak-100: #f6f8fa;
 $sub-500: #525866;
 $main-900: #0a0d14;
 $white-0: #ffffff;
+$disabled-300: #cdd0d5;
 
 // Resource Colors
 $purple-base: #6e3ff3;
 $red-base: #df1c41;
 $pink-base: #e255f2;
+$yellow-base: #f2ae40;
+$blue-base: #35b9e9;
 $verified: #35b9e9;
 
 @mixin background($value) {
