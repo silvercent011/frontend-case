@@ -1,5 +1,7 @@
+import type { iSidebarLink } from "~/types/SidebarLink";
+
 export class SideBarService {
-  public getMainContent() {
+  public getMainContent(): iSidebarLink[] {
     return [
       {
         url: "/",
@@ -44,7 +46,7 @@ export class SideBarService {
     ];
   }
 
-  public getSupportContent() {
+  public getSupportContent(): iSidebarLink[] {
     return [
       {
         url: "/configuracoes",

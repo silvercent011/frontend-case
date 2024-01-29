@@ -1,5 +1,7 @@
+import type { iActivity } from "~/types/Activity";
+
 export class TimeTrackerActivityService {
-  public getActivities() {
+  public getActivities(): iActivity[] {
     return [
       {
         title: "Loom Rebranding",

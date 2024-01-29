@@ -1,5 +1,7 @@
+import type { iFavs } from "~/types/Favs";
+
 export class FavsService {
-  getFavs() {
+  getFavs(): iFavs[] {
     return [
       {
         url: "/fav1",

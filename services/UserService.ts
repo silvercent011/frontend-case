@@ -1,5 +1,7 @@
+import type { iUser } from "~/types/User";
+
 export class UserService {
-  public getLoggedUser() {
+  public getLoggedUser(): iUser {
     return {
       name: "Sophia Williams",
       email: "sophia@jurisoft.com",

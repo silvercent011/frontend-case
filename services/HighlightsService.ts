@@ -1,5 +1,7 @@
+import type { iComment, iHighlight } from "~/types/Highlight";
+
 export class HighlightsService {
-  public getMonthlyHighlightsEmployee() {
+  public getMonthlyHighlightsEmployee(): iHighlight {
     return {
       name: "Matthew Johnson",
       role: "Engenheiro de Software",
@@ -8,7 +10,7 @@ export class HighlightsService {
     };
   }
 
-  public getMonthlyHighlightsReward() {
+  public getMonthlyHighlightsReward(): iHighlight {
     return {
       name: "Cartão presente de R$ 50,00",
       role: "Aproveite o prêmio, Matthew!",
@@ -17,7 +19,7 @@ export class HighlightsService {
     };
   }
 
-  public getComments() {
+  public getComments(): iComment[] {
     return [
       {
         user: "James Brown",
