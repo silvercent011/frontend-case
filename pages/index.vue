@@ -12,12 +12,9 @@
     <DashboardHighlightEmployees class="v-span-2" />
 
     <DashboardCoursesProgress />
-    <Card class="h-span-2" title="Cursos" icon="ri:book-3-line">
-      <template #header>
-        <input type="text" placeholder="Hello" />
-        <Button small>Ver todos</Button>
-      </template>
-    </Card>
+
+    <DashboardCourses class="h-span-2" />
+
     <Card title="Feedback diário" icon="ri:discuss-line"> </Card>
   </div>
 </template>

@@ -18,6 +18,7 @@ withDefaults(defineProps<ButtonProps>(), {
     ]"
     class="flex align-center justify-center"
   >
+    <slot name="Icon" />
     <Icon v-if="icon" :name="icon" class="btn-icon" />
     <span class="padding-x-4">
       <slot />
@@ -36,6 +37,7 @@ button {
   outline-offset: -1px;
   text-align: center;
 }
+
 .outlined {
   outline: 1px solid $soft-200;
   background: $white-0;

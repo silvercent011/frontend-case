@@ -17,7 +17,7 @@ const LocalLink = defineComponent({
 
 <template>
   <div class="flex gap-20">
-    <DashboardCoursesProgressBar class="progress-bar" :value="progress" />
+    <DashboardCoursesProgressBarCircle class="progress-bar" :value="progress" />
     <div class="flex flex-column gap-8">
       <div class="flex flex-column gap-4">
         <span class="course-title">{{ title }} </span>

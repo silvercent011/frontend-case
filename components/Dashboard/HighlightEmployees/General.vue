@@ -15,7 +15,7 @@ defineProps<EmployeeCardHighlightProps>();
       <span class="title">{{ name }}</span>
       <span class="subtitle">{{ role }}</span>
     </div>
-    <img :src="imgSrc" alt="Foto do colaborador" />
+    <img :src="imgSrc" alt="Imagem" style="max-height: 148px" />
     <span class="subtitle">{{ message }}</span>
   </div>
 </template>
