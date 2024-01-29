@@ -1,5 +1,42 @@
 # Desafio de Desenvolvimento Front-end
 
+## Como iniciar a aplicação?
+
+
+Instalando dependências:
+
+```bash
+# npm
+npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
+```
+
+Iniciando servidor de desenvolvimento
+
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+
 ## Como utilizar?
 Todos os componentes têm os seus estados vazios implementados, sendo o padrão, para "popular" os componentes, basta apenas interagir com um clique.
 
