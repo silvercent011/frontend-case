@@ -11,7 +11,7 @@ const viteConfig = {
 } satisfies ViteConfig;
 
 export default defineNuxtConfig({
-  modules: ["@nuxt/devtools", "nuxt-icon", "@nuxt/test-utils/module"],
+  modules: ["@nuxt/devtools", "nuxt-icon"],
   devtools: { enabled: true },
   css: ["@/assets/scss/global.scss"],
   vite: viteConfig,

@@ -1,0 +1,15 @@
+.table-container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.table-row {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.row-item {
+  display: flex;
+  flex: 1;
+}
