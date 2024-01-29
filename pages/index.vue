@@ -15,7 +15,7 @@
 
     <DashboardCourses class="h-span-2" />
 
-    <Card title="Feedback diário" icon="ri:discuss-line"> </Card>
+    <DashboardDailyFeedback />
   </div>
 </template>
 
