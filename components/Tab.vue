@@ -27,6 +27,7 @@ function updateValue() {
 
 <style lang="scss" scoped>
 .tab {
+  cursor: pointer;
   display: flex;
   padding: 4px 2px;
   justify-content: center;

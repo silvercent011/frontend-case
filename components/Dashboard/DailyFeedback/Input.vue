@@ -31,6 +31,12 @@ const emojis = _dailyFeedbackService.getEmojis();
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+    background: $soft-200;
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 .button:last-child {

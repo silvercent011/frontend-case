@@ -43,6 +43,10 @@ button {
   background: $white-0;
   box-shadow: 0px 1px 2px 0px rgba(82, 88, 102, 0.06);
   color: $sub-500;
+  &:hover {
+    background: $soft-200;
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 .primary {
@@ -50,6 +54,12 @@ button {
   color: $white-0;
   background: $primary-base;
   box-shadow: 0px 1px 2px 0px rgba(55, 93, 251, 0.08);
+
+  &:hover {
+    background: $primary-lighter;
+    color: $primary-base;
+    transition: all 0.3s ease-in-out;
+  }
 }
 .btn-icon {
   width: 20px;

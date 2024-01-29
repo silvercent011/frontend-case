@@ -11,7 +11,7 @@ defineProps<FavItemProps>();
 
 <template>
   <NuxtLink
-    class="rounded-small padding-x-12 padding-y-8 flex space-between align-center gap-8"
+    class="fav rounded-small padding-x-12 padding-y-8 flex space-between align-center gap-8"
   >
     <SideBarFavLegendDot :color="color" />
 
@@ -26,5 +26,13 @@ defineProps<FavItemProps>();
 <style lang="scss" scoped>
 span {
   flex: 1;
+}
+
+.fav {
+  &:hover {
+    background: $soft-200;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
 }
 </style>
