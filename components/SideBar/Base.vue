@@ -18,8 +18,11 @@
 
 <style lang="scss" scoped>
 aside {
+  position: sticky;
+  top: 0;
+  left: 0;
   border: 1px solid $soft-200;
-  width: 272px;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

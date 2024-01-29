@@ -14,7 +14,7 @@ const { name, email, verified, avatar } = _userService.getLoggedUser();
       <Avatar :name="name" :src="avatar" />
       <SideBarUserInfo :name="name" :email="email" :verified="verified" />
     </div>
-    <div class="flex align-center">
+    <div class="flex align-center hide-on-mobile">
       <Icon name="ri:arrow-right-s-line" class="icon" />
     </div>
   </div>

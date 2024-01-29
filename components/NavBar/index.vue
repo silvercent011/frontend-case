@@ -7,7 +7,7 @@
     <NavBarItemButton>
       <NavBarNotification />
     </NavBarItemButton>
-    <div class="flex gap-12 align-center justify-center">
+    <div class="flex gap-12 align-center justify-center hide-on-mobile">
       <slot />
     </div>
   </nav>

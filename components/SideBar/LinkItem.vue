@@ -21,27 +21,33 @@ const isActive = computed(() => {
 <template>
   <NuxtLink
     :class="{ activeLink: isActive }"
-    class="link rounded-small padding-x-12 padding-y-8 flex space-between align-center gap-8"
+    class="link rounded-small padding-x-12 padding-y-8 flex justify-center align-center gap-8"
     :to="url"
   >
     <div v-if="isActive" class="tip"></div>
 
     <Icon :class="{ activeIcon: isActive }" class="icon" :name="iconSrc" />
 
-    <span class="label" :class="{ inactiveLabel: !isActive }">
+    <span class="label hide-on-mobile" :class="{ inactiveLabel: !isActive }">
       {{ label }}
     </span>
-    <Icon v-if="isActive" name="ri:arrow-right-s-line" class="icon" />
+    <Icon
+      v-if="isActive"
+      name="ri:arrow-right-s-line"
+      class="icon hide-on-mobile"
+    />
   </NuxtLink>
 </template>
 
 <style lang="scss" scoped>
-.link:hover {
-  background-color: $weak-100;
-  transition: all;
-  cursor: pointer;
-  .icon {
-    color: $primary-base;
+.link {
+  &:hover {
+    background-color: $weak-100;
+    transition: all;
+    cursor: pointer;
+    .icon {
+      color: $primary-base;
+    }
   }
 }
 
@@ -73,6 +79,6 @@ span {
   height: 20px;
   background-color: $primary-base;
   border-radius: 0 4px 4px 0;
-  margin-left: -32px;
+  left: 0;
 }
 </style>

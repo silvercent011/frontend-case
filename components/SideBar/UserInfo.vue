@@ -9,7 +9,7 @@ defineProps<UserInfoProps>();
 </script>
 
 <template>
-  <div class="flex flex-column gap-4">
+  <div class="flex flex-column gap-4 hide-on-mobile">
     <span class="label flex gap-2"
       >{{ name }}
       <img

@@ -15,4 +15,10 @@ $span-values: 2, 4, 6, 8, 10;
   .h-span-#{$span} {
     @include h-span($span);
   }
+
+  @media (max-width: 1000px) {
+    .h-span-#{$span} {
+      grid-column: auto;
+    }
+  }
 }

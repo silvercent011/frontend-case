@@ -13,11 +13,12 @@ const companyData = _companyService.getCompany();
     <div class="flex gap-12 align-center">
       <img :src="companyData.logo" :alt="`${companyData.name} logo`" />
       <SideBarCompanyData
+        class="hide-on-mobile"
         :company="companyData.name"
         :area="companyData.area"
       />
     </div>
-    <div class="flex align-center">
+    <div class="flex align-center hide-on-mobile">
       <Icon name="ri:arrow-down-s-line" class="icon" />
     </div>
   </div>

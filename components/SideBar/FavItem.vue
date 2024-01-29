@@ -11,15 +11,15 @@ defineProps<FavItemProps>();
 
 <template>
   <NuxtLink
-    class="fav rounded-small padding-x-12 padding-y-8 flex space-between align-center gap-8"
+    class="fav rounded-small padding-x-12 padding-y-8 flex justify-center align-center gap-8"
   >
     <SideBarFavLegendDot :color="color" />
 
-    <span class="label-small">
+    <span class="label-small hide-on-mobile">
       {{ label }}
     </span>
 
-    <SideBarShortcut :index="mappingIndex" />
+    <SideBarShortcut class="hide-on-mobile" :index="mappingIndex" />
   </NuxtLink>
 </template>
 
